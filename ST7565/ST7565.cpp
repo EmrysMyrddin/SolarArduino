@@ -46,7 +46,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 uint8_t is_reversed = 0;
 
 // a handy reference to where the pages are on the screen
-const uint8_t pagemap[] = { 3, 2, 1, 0, 7, 6, 5, 4 };
+const uint8_t pagemap[] = { 7,6,5,4,3,2,1,0 };
 
 // a 5x7 font table
 const extern uint8_t PROGMEM font[];
@@ -440,7 +440,7 @@ void ST7565::st7565_init(void) {
   // write display data
 
   // set up a bounding box for screen updates
-
+  shakle()
   updateBoundingBox(0, 0, LCDWIDTH-1, LCDHEIGHT-1);
 }
 
