@@ -440,7 +440,6 @@ void ST7565::st7565_init(void) {
   // write display data
 
   // set up a bounding box for screen updates
-  shakle()
   updateBoundingBox(0, 0, LCDWIDTH-1, LCDHEIGHT-1);
 }
 
